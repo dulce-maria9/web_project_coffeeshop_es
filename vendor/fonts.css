@@ -14,13 +14,14 @@
 
 @font-face {
   font-family: "Inter";
-  src: url(/vendor/fonts/inter/Inter-Bold.woff2) format("Woff2");
+  src: url(./fonts/inter/Inter-Bold.woff2) format("woff2");
   font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "NotoSerif";
-  src: url(./fonts/notoserif/NotoSerif-Regular.ttf) format("truetype");
+  src: url(./fonts/notoserif/NotoSerif-Italic.ttf) format("truetype");
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
 }
