@@ -3,7 +3,7 @@
   max-height: 800px;
   height: 100vh;
   background-color: #fff;
-  background-image: url(/images/background_header.svg);
+  background-image: url(../images/background_header.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -51,7 +51,6 @@
 
 .header__span-accent {
   font-family: "Noto Serif", "Times New Roman", serif;
-  font-style: italic;
   color: #ff976b;
 }
 
