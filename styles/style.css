@@ -48,6 +48,7 @@
 
 .nav__link {
   font-weight: 500;
+  font-weight: 500;
   text-decoration: none;
   color: #000;
 }
@@ -63,6 +64,7 @@
 
 .header__span-accent {
   font-family: "Noto Serif", "Times New Roman", serif;
+  font-weight: 400;
   color: #ff976b;
 }
 
@@ -70,6 +72,7 @@
   margin-left: 80px;
   max-width: 683px;
   font-size: 20px;
+  font-weight: normal;
   line-height: 30px;
 }
 
