@@ -51,8 +51,89 @@
       </div>
     </header>
 
-    <main class="reservation" id="reservation"></main>
+    <section class="reservation" id="reservation">
+      <h2 class="reservation__title">Reserva una mesa</h2>
+      <div class="reservation__form">
+        <div class="reservation__form-fielset">
+          <label class="form__label" for="nombre">Nombre *</label>
+          <input
+            type="text"
+            class="form__input"
+            id="nombre"
+            placeholder="Nombre"
+            required
+          />
 
-    <footer class="footer" id="contacts"></footer>
+          <label class="form__label" for="comensales"
+            >Número de comensales *</label
+          >
+          <input
+            type="number"
+            class="form__input"
+            id="comensales"
+            min="1"
+            max="8"
+            placeholder="1-8"
+            required
+          />
+
+          <label class="form__label" for="fecha">Fecha y hora *</label>
+          <input
+            type="datetime-local"
+            id="fecha"
+            class="form__input"
+            required
+          />
+
+          <label class="form__label" for="email">Tu correo electrónico *</label>
+          <input
+            type="email"
+            class="form__input"
+            id="email"
+            placeholder="email@email.com"
+            required
+          />
+        </div>
+        <button type="submit" class="form__button">Reservar una mesa</button>
+
+        <label class="form__label form__checkbox">
+          <input type="checkbox" class="form__checkbox-input required" />Acepto
+          los términos de uso
+        </label>
+      </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+      <div class="footer__circle"></div>
+      <div class="footer__content">
+        <img
+          class="footer__logo"
+          src="./images/logo_coffeeshop_light.svg"
+          alt="Logo de la cafetería"
+        />
+        <div class="footer__social-media">
+          <h3 class="footer__title">Redes Sociales</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <img
+                class="footer__social-icon"
+                src="./images/facebook_white.svg"
+                alt="logo de facebook"
+              />
+              <a href="#" class="footer__social-link"> Facebook</a>
+            </li>
+            <li class="footer__list-item">
+              <img
+                class="footer__social-icon"
+                src="./images/instagram_white.svg"
+                alt="logo de instagram"
+              />
+              <a href="#" class="footer__social-link"> Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Dulce Silva</p>
+    </footer>
   </body>
 </html>
