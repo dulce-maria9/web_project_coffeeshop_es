@@ -1,8 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página del café de especialidad en Triple Peaks"
+    />
+    <meta name="author" content="Dulce Silva" />
+    <meta name="keywords" content="HTML, CSS" />
     <title>Triple Espresso</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,58 +56,70 @@
         <p class="info__text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
       </div>
     </header>
+    <main>
+      <section class="reservation" id="reservation">
+        <h2 class="reservation__title">Reserva una mesa</h2>
+        <form class="reservation__form">
+          <div class="reservation__form-fieldset">
+            <label class="form__label" for="nombre">Nombre *</label>
+            <input
+              type="text"
+              class="form__input"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre"
+              required
+            />
 
-    <section class="reservation" id="reservation">
-      <h2 class="reservation__title">Reserva una mesa</h2>
-      <div class="reservation__form">
-        <div class="reservation__form-fielset">
-          <label class="form__label" for="nombre">Nombre *</label>
-          <input
-            type="text"
-            class="form__input"
-            id="nombre"
-            placeholder="Nombre"
-            required
-          />
+            <label class="form__label" for="comensales"
+              >Número de comensales *</label
+            >
+            <input
+              type="number"
+              class="form__input"
+              name="comensales"
+              id="comensales"
+              min="1"
+              max="8"
+              placeholder="1-8"
+              required
+            />
 
-          <label class="form__label" for="comensales"
-            >Número de comensales *</label
-          >
-          <input
-            type="number"
-            class="form__input"
-            id="comensales"
-            min="1"
-            max="8"
-            placeholder="1-8"
-            required
-          />
+            <label class="form__label" for="fecha">Fecha y hora *</label>
+            <input
+              type="datetime-local"
+              class="form__input"
+              name="fecha"
+              id="fecha"
+              required
+            />
 
-          <label class="form__label" for="fecha">Fecha y hora *</label>
-          <input
-            type="datetime-local"
-            id="fecha"
-            class="form__input"
-            required
-          />
+            <label class="form__label" for="email"
+              >Tu correo electrónico *</label
+            >
+            <input
+              type="email"
+              class="form__input"
+              name="email"
+              id="email"
+              placeholder="email@email.com"
+              required
+            />
+          </div>
+          <button type="submit" class="form__button">Reservar una mesa</button>
 
-          <label class="form__label" for="email">Tu correo electrónico *</label>
-          <input
-            type="email"
-            class="form__input"
-            id="email"
-            placeholder="email@email.com"
-            required
-          />
-        </div>
-        <button type="submit" class="form__button">Reservar una mesa</button>
-
-        <label class="form__label form__checkbox">
-          <input type="checkbox" class="form__checkbox-input required" />Acepto
-          los términos de uso
-        </label>
-      </div>
-    </section>
+          <label class="form__label form__checkbox">
+            <input
+              type="checkbox"
+              class="form__checkbox-input"
+              name="términos"
+              required
+            />
+            Acepto los términos de uso
+          </label>
+        </form>
+      </section>
+    </main>
 
     <footer class="footer" id="contacts">
       <div class="footer__circle"></div>
